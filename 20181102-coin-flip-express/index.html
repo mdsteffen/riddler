@@ -13,7 +13,7 @@
 <p>Design a game using only coin flips with a probability of \(a/b\) of winning. This is a more general case
 of the FiveThirtyEight <a href="https://fivethirtyeight.com/features/how-far-would-you-go-to-rig-a-coin-flip/">Riddler Express problem</a> which
 asks you to design a game where the probability of winning is 1/3, 1/4, or 1/5.</p>
-<h3>Solution (in words):</h3>
+<h3>Solution:</h3>
 <p>Pick a suitably large number of coin flips, \(n\), such that \(b \leq 2^n\). Generate a random number between
 0 and \(2^n - 1\) by flipping a coin \(n\) times and letting each coin flip represent a binary 0 or 1.
 String those \(n\) digits together, and you will have a binary number between 0 and \(2^n-1\).
@@ -21,7 +21,7 @@ Designate the first \(a\) of these numbers as winning numbers, designate the nex
 numbers as losing numbers, and designate the remaining \(2^n-b\) of these numbers as needing to restart
 the game. Continue generating random numbers until the player either wins or loses.</p>
 
-<h3>Solution (in mathematical notation):</h3>
+<h3>Formal Solution:</h3>
 <p>Assume \(a, b \in \mathbb N \), \(a \leq b\) and \(a/b\) is in its most reduced form. Let \(n\) be the smallest integer such that \(b \le 2^n\).
 The game proceeds as follows:</p>
 <ol>
