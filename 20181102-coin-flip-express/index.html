@@ -28,6 +28,7 @@ The game proceeds as follows:</p>
   <li>Let \(m=\sum_{i=1}^n a_i \cdot 2^{i-1}\).</li>
   <li> If \(m \lt a\), WIN. If \(a \leq m \lt b\), LOSE. If \(m \geq b\), restart game at (1).</li>
 </ol>
+
 <h3>Analysis:</h3>
 <p>Given that all sequences leading to \(m=0\) to \(m=2^n-1\) are equally likely, the probability of winning
 a round is \(a/2^n\). The probability of losing a round is \((b-a)/2^n\). The probability of
